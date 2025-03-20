@@ -1,5 +1,6 @@
 :root{
     --lightShade: #FCFBFD;
+    --lightShade-Alternate: #FAF0E6 ;
     --lightAccent: #ff8a8a;
     --lightAccent-Darker: #E06163;
     --lightAccent-Background: #FFD0DD;
@@ -10,11 +11,18 @@
     --darkAccent-Background:#DDC7FF;
     --darkShade: #5e104f;
 
+    --swiper-navigation-color: var(--darkAccent);
+    --swiper-pagination-color: var(--lightAccent);
+    --screenMaxWidth: 90rem;
+
 
 }
 
 * {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     box-sizing: border-box;
+    max-width: var(--screenMaxWidth);
 }

@@ -7,7 +7,7 @@
     list-style: none;
 }
 .card-list .card-item .card-link{
-    width: 25rem;
+    user-select: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -22,6 +22,7 @@
 }
 .card-list .card-item .card-link:hover {
     border-color: var(--mainBrandColor-Transparent);
+    /* background-color: var(--lightShade-Alternate); */
 }
 .card-list .card-link .card-image{
     grid-column-start: 1;
@@ -55,6 +56,18 @@
 .type-freelance{
     color: var(--lightAccent-Darker);
     background-color: var(--lightAccent-Background);
+}
+
+.type-personal{
+    color: var(--darkShade);
+    background-color: var(--darkAccent-Background);    
+}
+
+.card-wrapper{
+    max-width: var(--screenMaxWidth);
+    margin: 0 3rem 1.75rem;
+    padding: 1.5rem 0.75rem;
+    overflow: hidden;
 }
 
 .card-list .card-link .card-title{

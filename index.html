@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/grids.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/interactive.css">
@@ -36,11 +37,11 @@
             <h2>Games</h2>
             <p>Projects where user interaction is an integral component to the experience of the work.</p>
             <!-- Carosel selection for projects -->
-            <div class="container">
+            <div id="hp-games-browse-carosel" class="card-container swiper">
                 <div class="card-wrapper">
-                    <ul class="card-list">
+                    <ul class="card-list swiper-wrapper">
                         <!-- individual Card Item -->
-                        <li class="card-item">
+                        <li class="card-item swiper-slide">
                             <a href="" class="card-link">
                                 <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
                                 <p class="card-type type-academic">Academic</p>
@@ -49,10 +50,59 @@
                                 <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
                             </a>
                         </li>
-                        
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-academic">Academic</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
                     </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/card_swiper.js"></script>
 
         </section>
         
@@ -60,12 +110,146 @@
         <section id="hp-video-browse">
             <h2>Animation & Video</h2>
             <p>Motion picture projects that are passively viewed e.g., short films, animations, promotional videos etc.</p>
+            <div id="hp-games-browse-carosel" class="card-container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <!-- individual Card Item -->
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-academic">Academic</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-academic">Academic</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/card_swiper.js"></script>
+            
+            
 
         </section>
         <!-- Other 3D Visualizations for Design -->
         <section id="hp-design-browse">
             <h2>Design</h2>
             <p>Projects design and static representation are the priority.</p>
+            <div id="hp-games-browse-carosel" class="card-container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <!-- individual Card Item -->
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-academic">Academic</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-academic">Academic</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-freelance">Freelance</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="" class="card-link">
+                                <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
+                                <p class="card-type type-personal">Personal</p>
+                                <h3 class="card-title">The Fisherman Short Film | 2024</h3>
+                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/card_swiper.js"></script>
 
         </section>
 
