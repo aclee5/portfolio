@@ -1,0 +1,87 @@
+/* For any interactive elements used */
+/* Card Carosel */
+.card-wrapper{
+    display: flex;
+}
+.card-list .card-item{
+    list-style: none;
+}
+.card-list .card-item .card-link{
+    width: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: var(--lightShade); 
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    border: 0.15rem solid transparent;
+    box-shadow: 0 0.5rem 0.5rem rgba(50, 0, 50, 0.15);
+    transition: 0.4s ease;
+
+}
+.card-list .card-item .card-link:hover {
+    border-color: var(--mainBrandColor-Transparent);
+}
+.card-list .card-link .card-image{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card-list .card-link .card-type{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    padding:0.4rem 0.6rem;
+    font-size: 0.95rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2.5rem;
+    margin:0.3rem;
+    font-weight:600; 
+}
+
+.type-academic{
+    color: var(--darkAccent);
+    background-color: var(--mainBrandColor-Background);
+}
+
+
+.type-freelance{
+    color: var(--lightAccent-Darker);
+    background-color: var(--lightAccent-Background);
+}
+
+.card-list .card-link .card-title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: 0.3rem;
+    margin-left: 0;
+}
+
+.card-list .card-link .card-role{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    font-weight: 700;
+    margin: 0.3rem;
+    margin-left: 0;
+}
+
+.card-list .card-link .card-description{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    font-weight: 100;
+    margin: 0.3rem;
+    margin-left: 0;
+    
+}

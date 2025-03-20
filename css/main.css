@@ -1,8 +1,20 @@
 :root{
-    --lightShade: #d4d4d4;
+    --lightShade: #FCFBFD;
     --lightAccent: #ff8a8a;
+    --lightAccent-Darker: #E06163;
+    --lightAccent-Background: #FFD0DD;
     --mainBrandColor: #c7aecb;
+    --mainBrandColor-Background: #F2DCF5;
+    --mainBrandColor-Transparent: #c7aecb8e;
     --darkAccent: #675582;
+    --darkAccent-Background:#DDC7FF;
     --darkShade: #5e104f;
 
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
