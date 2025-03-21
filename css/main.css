@@ -11,7 +11,7 @@
     --darkAccent-Background:#DDC7FF;
     --darkShade: #5e104f;
 
-    --swiper-navigation-color: var(--darkAccent);
+    --swiper-navigation-color: var(--mainBrandColor);
     --swiper-pagination-color: var(--lightAccent);
     --screenMaxWidth: 90rem;
 
