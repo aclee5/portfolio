@@ -26,3 +26,14 @@
     box-sizing: border-box;
     max-width: var(--screenMaxWidth);
 }
+
+th{
+    text-align: start;
+    padding: 0.25rem;
+    padding-right: 1rem;
+}
+
+td{
+    text-align: start;
+    padding: 0.25rem;
+}
