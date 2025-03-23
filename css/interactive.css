@@ -20,9 +20,9 @@
     transition: 0.4s ease;
 
 }
-.card-list .card-item .card-link:hover {
-    border-color: var(--mainBrandColor-Transparent);
-    /* background-color: var(--lightShade-Alternate); */
+.card-list .card-item .card-link:hover, .card-list .card-item .card-link:focus {
+    border-color: var(--lightAccent-Background);
+    box-shadow: 0 0.5rem 0.5rem var(--lightAccent-Background);
 }
 .card-list .card-link .card-image{
     grid-column-start: 1;
@@ -74,7 +74,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 300;
     margin: 0.3rem;
     margin-left: 0;
@@ -97,4 +97,98 @@
     margin: 0.3rem;
     margin-left: 0;
     
+}
+
+/* Items for sub nav scroll spy */
+.nav-scroll-indicator{
+    position: fixed;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+
+}
+
+.nav-scroll-indicator a{
+    padding: 0.7rem;
+
+}
+
+.nav-scroll-indicator a::after{
+    content:'';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--mainBrandColor);
+    transform: translate(-50%, -50%);
+}
+
+.nav-scroll-indicator a.active::after{
+    background-color: var(--lightAccent);
+    transform: scale(1.3) translate(-50%, -50%);
+} 
+
+.nav-scroll-indicator a::before{
+    content: attr(data-section);
+    position: absolute;
+    right: 1.4rem;
+    transform: translateY(50%);
+    background-color: var(--lightAccent);
+    color: var(--lightShade);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    pointer-events: none;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.5rem 0.5rem var(--lightAccent-Background);
+    opacity: 0; 
+    transition: all 400ms ease;
+}
+
+.nav-scroll-indicator a:hover::before, .nav-scroll-indicator a:focus::before{
+    opacity: 1;
+    transform: translate(0, -50%);
+
+
+}
+
+.nav-scroll-arrow{
+    display: none;
+}
+
+@media (max-width:70rem){
+    .nav-scroll-indicator{
+        right: 1rem;
+        background-color: var(--lightShade);
+        box-shadow: 0 0.1rem 1rem 0.5rem var(--mainBrandColor-Transparent);
+        padding: 1.2rem 0.2rem;
+        border-radius: 1rem;
+        transform: translate(3rem, -50%);
+        transition: all 400ms ease;
+    }
+    .nav-scroll-indicator.active {
+        transform: translate(-30%, -50%);
+
+    }
+
+    .nav-scroll-indicator .nav-scroll-arrow{
+        position:absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.8rem;
+        padding: 0.5rem 0.2rem;
+        background-color: var(--mainBrandColor);
+        color: var(--lightShade);
+        border-radius: 0.5rem 0 0 0.5rem;
+        display:flex;
+        cursor: pointer;
+    }
+    .nav-scroll-indicator .nav-scroll-arrow.active{
+        transform: translateY(-50%) scaleX(-100%); 
+        border-radius: 0 0.5rem 0.5rem 0;
+
+    }
 }

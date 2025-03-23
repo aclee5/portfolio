@@ -5,6 +5,7 @@
     --lightAccent-Darker: #E06163;
     --lightAccent-Background: #FFD0DD;
     --mainBrandColor: #c7aecb;
+    --mainBrandColor-Darker: #9c7f9f;
     --mainBrandColor-Background: #F2DCF5;
     --mainBrandColor-Transparent: #c7aecb8e;
     --darkAccent: #675582;
@@ -13,27 +14,49 @@
 
     --swiper-navigation-color: var(--mainBrandColor);
     --swiper-pagination-color: var(--lightAccent);
-    --screenMaxWidth: 90rem;
+    --swiper-pagination-bullet-inactive-color: var(--mainBrandColor);
+    --swiper-pagination-bullet-inactive-opacity: 0.7;
+    --screenMaxWidth: 80rem;
+    --tableColumnMax: 12rem;
 
 
+}
+
+html{
+    scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 * {
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0;
     box-sizing: border-box;
-    max-width: var(--screenMaxWidth);
+    max-width: var(--screenMaxWidth); 
 }
 
-th{
+th, td{
     text-align: start;
     padding: 0.25rem;
     padding-right: 1rem;
+    max-width: var(--tableColumnMax);
+    align-content: start;
+    margin: 0;
+}
+table{
+    margin: 0;
 }
 
-td{
-    text-align: start;
-    padding: 0.25rem;
+section .project-section-wrapper{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin:auto;
 }
+/* All Text */
+p{
+    max-width: 40rem;
+}
+
+img {
+    width: 100%;
+}
+

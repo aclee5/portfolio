@@ -27,9 +27,9 @@ new Swiper('.card-wrapper', {
         1024:{
             slidesPerView: 3
         },
-        1792:{
-            slidesPerView: 4
-        },
+        // 1792:{
+        //     slidesPerView: 4
+        // },
     },
   
     // And if we need scrollbar

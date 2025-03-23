@@ -9,113 +9,143 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Walter+Turncoat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/grids.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/interactive.css">
+    <script defer src="js/project_scrollspy.js"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <a href="index.html">Alexis Lee</a>
+            <ul>
+                <li><a href="index.html#hp-games-browse">Games</a></li>
+                <li><a href="index.html#hp-video-browse">Animation & Video</a></li>
+                <li><a href="index.html#hp-design-browse">Design</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-
-        <!-- Hero and General Details-->
-        <figure>
-            <iframe class="resp-iframe" src="https://player.vimeo.com/video/536172375?h=829ee759bf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <figcaption>Figure 1.Final Rendered Video of Hummingbird Pavilion. <a href="https://vimeo.com/536172375">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Fly-through Animation</a> from <a href="https://vimeo.com/user105367965">Alexis Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
-        </figure>
-        <h1>Hummingbird Pavilion</h1>
-        <div>
-        <h2>General Project Details</h2>
-        <!-- Table of all the details -->
-        <table>
-            <tr>
-                <th>Goal:</th>
-                <td>Parametrically designed pavilion, maximum 8-metres by 12-metre area, that houses a sculpture.</td>
-            </tr>
-            <tr>
-                <th>Location Specifications:</th>
-                <td>Holland Park Surrey, British Columbia</td>
-            </tr>
-            <tr>
-                <th>Elapsed Time:</th>
-                <td>1 month (March 2021 - April 2021)</td>
-            </tr>
-            <tr>
-                <th>Team Members:</th>
-                <td>Soraya Elchehimi and Daniel Yeo</td>
-            </tr>
-            <tr>
-                <th>Tools:</th>
-                <td>Rhino, Grasshopper</td>
-            </tr>
-            
-        </table>
+        <!-- Sub Nav for Project -->
+        <div class="nav-scroll-indicator">
+            <div class="nav-scroll-arrow">
+                <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            </div>
+            <a href="#hbp-overview" class="active" data-section="Overview"></a>
+            <a href="#hbp-conceptualization" data-section="Conceptualization"></a>
+            <a href="#hbp-modelling" data-section="Modelling"></a>
+            <a href="#hbp-rendering" data-section="Rendering"></a>
+            <a href="#hbp-references" data-section="References"></a>            
         </div>
         <!-- Overview Section -->
         <section id="hbp-overview">
+            <figure>
+                <iframe class="resp-iframe" src="https://player.vimeo.com/video/536172375?h=829ee759bf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Figure 1.Final Rendered Video of Hummingbird Pavilion. <a href="https://vimeo.com/536172375">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Fly-through Animation</a> from <a href="https://vimeo.com/user105367965">Alexis Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
+            </figure>
+            <h1>Hummingbird Pavilion</h1>
+            <div>
+                <h2>General Project Details</h2>
+                <!-- Table of all the details -->
+                <table>
+                    <tr>
+                        <th>Goal:</th>
+                        <th>Location Specifications:</th>
+                        <th>Elapsed Time:</th>
+                        <th>Role:</th>
+                        <th>Team Members:</th>
+                        <th>Tools:</th>
+                    </tr>
+                    <tr>
+                        <td>Parametrically designed pavilion, maximum 8-metres by 12-metre area, that houses a sculpture.</td>
+                        <td>Holland Park Surrey, British Columbia</td>
+                        <td>1 month (March 2021 - April 2021)</td>
+                        <td>3D Modeler, Renderer</td>
+                        <td>Soraya Elchehimi and Daniel Yeo</td>
+                        <td>Rhino, Grasshopper</td>
+                    </tr>
+                </table>
+            </div>
+       
+        
             <h2>Overview</h2>
             <p>The Hummingbird Pavilion, Figure 1, was a project created for a Spatial Design course. My contributions to the project were in the conceptualization of the project, 3D model creation, and rendering a walkthrough animation of the space.</p>
         </section>       
         <!-- The Actual Writing Part -->
         <section id="hbp-conceptualization">
-            <h2>Conceptualization</h2>
-            <figure>
-                <img src="img/hum-bird/humbird-fig-2.png" alt="Map of Holland Park Pathway with Sketched Pavilion Size Specifications">
-                <figcaption>Figure 2. Map of a Holland Park pathway with sketched pavilion size specifications, marked according to legend provided on map.</figcaption>
-            </figure>
-            <p>During the team's initial individual ideation period, my ideation process began with understanding the spatial limitations in Holland Park by picking specific locations in the park to design for as seen in Figure 2. Most locations picked were pathway intersections as they presented a greater diversity of compositional opportunities.</p>
-            <figure>
-                <img src="img/hum-bird/humbird-fig-3.png" alt="Ideation Sketches for Pavilion">
-                <figcaption>Figure 3. Ideation sketches for pavilion.</figcaption>
-            </figure>
-            <p> I then sketched ideas, most inspired by natural shapes.  I would experiment with the abstracted gestures and rhythms of their form. An example is shown in Figure 3, showing one of my sketch pages, the top right of which is an idea inspired by a rhythm of a hummingbird and the flower petal structure. This idea was one that the team collectively found was the most visually striking, and thus it was decided to pursue this idea for the project.</p>
-            
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Conceptualization</h2>
+                <figure class="grid-col-1">
+                    <img src="img/hum-bird/humbird-fig-2.png" alt="Map of Holland Park Pathway with Sketched Pavilion Size Specifications">
+                    <figcaption>Figure 2. Map of a Holland Park pathway with sketched pavilion size specifications, marked according to legend provided on map.</figcaption>
+                </figure>
+                <p class="grid-col-2">During the team's initial individual ideation period, my ideation process began with understanding the spatial limitations in Holland Park by picking specific locations in the park to design for as seen in Figure 2. Most locations picked were pathway intersections as they presented a greater diversity of compositional opportunities.</p>
+                <figure>
+                    <img src="img/hum-bird/humbird-fig-3.png" alt="Ideation Sketches for Pavilion">
+                    <figcaption>Figure 3. Ideation sketches for pavilion.</figcaption>
+                </figure>
+                <p> I then sketched ideas, most inspired by natural shapes.  I would experiment with the abstracted gestures and rhythms of their form. An example is shown in Figure 3, showing one of my sketch pages, the top right of which is an idea inspired by a rhythm of a hummingbird and the flower petal structure. This idea was one that the team collectively found was the most visually striking, and thus it was decided to pursue this idea for the project.</p>
+
+            </div>            
         </section>
         <section id="hbp-modelling">
-            <h2>Modelling in Rhino</h2>
-            <figure>
-                <img src="img/hum-bird/humbird-fig-4.JPG" alt="First Iteration Grasshopper Pavilion Models">
-                <figcaption>Figure 6. First iteration of models created with Grasshopper in Rhino.</figcaption>    
-            </figure>
-            <figure>
-                <img src="img/hum-bird/humbird-fig-5.png" alt="Iterations of Pavilion to Determine Light Paths">
-                <figcaption>Figure 5. Iterations for lighting pattern design.</figcaption>       
-            </figure>
-            <p>The next step was the process of creating the model which I created using the CAD Rhino’s node-based plugin Grasshopper. I created the structure entirely in Grasshopper by combining information found in two different YouTube tutorials to create the petal surface (Daniel Christev, 2016), and the patterns on the surface (Om.egvo, 2019). The structure went through many iterations from the initial form seen in Figure 4 to the final form after experimentations with different light patterns, in Figure 5. The key functions of the final node structure are explained in the video in Figure 6.</p>
-            <figure>
-                <iframe src="https://player.vimeo.com/video/536171668?h=2c10029d06" width="640" height="455" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Figure 6. Walkthrough of key functions in Grasshopper node tree.<a href="https://vimeo.com/536171668">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Grasshopper/Parametric Definition</a> from <a href="https://vimeo.com/user105367965">Alexis Lee, Narrated by Soraya Elchehimi</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
-            </figure>
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Modelling in Rhino</h2>
+                <figure class="grid-col-1">
+                    <img src="img/hum-bird/humbird-fig-4.JPG" alt="First Iteration Grasshopper Pavilion Models">
+                    <figcaption>Figure 4. First iteration of models created with Grasshopper in Rhino.</figcaption>    
+                </figure>
+                <figure class="grid-col-2">
+                    <img src="img/hum-bird/humbird-fig-5.png" alt="Iterations of Pavilion to Determine Light Paths">
+                    <figcaption>Figure 5. Iterations for lighting pattern design.</figcaption>       
+                </figure>
+                <p class="grid-col-1">The next step was the process of creating the model which I created using the CAD Rhino’s node-based plugin Grasshopper. I created the structure entirely in Grasshopper by combining information found in two different YouTube tutorials to create the petal surface (Daniel Christev, 2016), and the patterns on the surface (Om.egvo, 2019). The structure went through many iterations from the initial form seen in Figure 4 to the final form after experimentations with different light patterns, in Figure 5. The key functions of the final node structure are explained in the video in Figure 6.</p>
+                <figure class="grid-col-2">
+                    <iframe src="https://player.vimeo.com/video/536171668?h=2c10029d06" width="640" height="455" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Figure 6. Walkthrough of key functions in Grasshopper node tree.<a href="https://vimeo.com/536171668">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Grasshopper/Parametric Definition</a> from <a href="https://vimeo.com/user105367965">Alexis Lee</a> on <a href="https://vimeo.com">Vimeo</a>. Narrated by Soraya Elchehimi</figcaption>
+                </figure>
+            </div>            
             
         </section>
         <section id="hbp-rendering">
-            <h2>Rendering</h2>
-            <div class="grid project-2image-compare">
-                <figure class="project-2image-compare-1">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Rendering</h2>
+                <p class="grid-col-1">One challenging portion of the project was rendering a walkthrough animation of the model using Rhino. Due to hardware limitations, attempting to render a full animation at once would crash the program due to a shortage in memory resulting in very inconsistent quality renders. Figure 7 is an example of one of these hardware glitches which differs from the expected render in Figure 8. To solve the hardware memory issue, I had to reduce the quality of the images, and render the animation in smaller segments.</p>
+                <!-- Add the comparison overlay -->
+                <figure class="grid-col-2">
                     <img src="img/hum-bird/humbird-fig-7.png" alt="Poor Render Result with Inverted Shadows.">
                     <figcaption>Figure 7. A poor render as a result of batch render in Rhino with limited hardware specs. Shows raytracing appearing to have occurred in reverse with only shadow in illuminated.</figcaption>    
                 </figure>
-                <figure class="project-2image-compare-2">
+                <figure class="grid-col-2">
                     <img src="img/hum-bird/humbird-fig-8.png" alt="Expected/Standard Render Result with Raytraced Shadows">
                     <figcaption>Figure 8. A expected quality render output from Rhino renderer.</figcaption>       
                 </figure>
+                
             </div>
-            <p>One challenging portion of the project was rendering a walkthrough animation of the model using Rhino. Due to hardware limitations, attempting to render a full animation at once would crash the program due to a shortage in memory resulting in very inconsistent quality renders. Figure 7 is an example of one of these hardware glitches which differs from the expected render in Figure 8. To solve the hardware memory issue, I had to reduce the quality of the images, and render the animation in smaller segments.</p>
         </section>
         <section id="hbp-reflection">
-            <h2>Reflection</h2>
-            <p>Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Reflection</h2>
+                <p>Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
+            </div>
         </section>
         <section id="hbp-references">
-            <h2>References</h2>
-            <ul class="reference-ul">
-                <li>Daniel Christev. (2016, February 1). <em>Grasshopper - Creating a Simple Flower</em> [Video]. YouTube. <a href="url">https://youtu.be/_3_7sDce6ME\</a></li>
-                <li>Om. egvo (2019, August 27).<em> Grasshopper tutorial Cull Pattern-Perforated Surface</em> [Video]. YouTube. <a href="url">https://youtu.be/SEYc37Mr4uM</a></li>
-            </ul>
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">References</h2>
+                <ul class="reference-ul">
+                    <li>Daniel Christev. (2016, February 1). <em>Grasshopper - Creating a Simple Flower</em> [Video]. YouTube. <a href="url">https://youtu.be/_3_7sDce6ME\</a></li>
+                    <li>Om. egvo (2019, August 27).<em> Grasshopper tutorial Cull Pattern-Perforated Surface</em> [Video]. YouTube. <a href="url">https://youtu.be/SEYc37Mr4uM</a></li>
+                </ul>
+            </div>
 
         </section>
         
     </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
