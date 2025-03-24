@@ -159,7 +159,7 @@
     display: none;
 }
 
-@media (max-width:70rem){
+@media (max-width:80rem){
     .nav-scroll-indicator{
         right: 1rem;
         background-color: var(--lightShade);

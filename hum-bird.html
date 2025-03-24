@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/interactive.css">
     <script defer src="js/project_scrollspy.js"></script>
 </head>
-<body>
+<body class=".grid">
     <header>
         <nav>
             <a href="index.html">Alexis Lee</a>
@@ -41,37 +41,57 @@
         </div>
         <!-- Overview Section -->
         <section id="hbp-overview">
-            <figure>
-                <iframe class="resp-iframe" src="https://player.vimeo.com/video/536172375?h=829ee759bf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <!-- Banner/Hero -->
+            <div class="project-banner">
+                <h1>Hummingbird Pavilion</h1>
+                <img src="img/hum-bird/humbird-fig-background.jpg" alt="Hummingbird Pavillion Banner">
+            </div>
+
+            
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">General Project Details</h2>
+                <!-- Table of General Project Details  -->
+                <div class="project-details-wrapper grid-full">
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Role:</h3>
+                        <p>3D Modeler and Renderer</p>
+                    </div>
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Team Members:</h3>
+                        <p>Soraya Elchehimi and Daniel Yeo</p>
+                    </div>
+                    
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Tools</h3>
+                        <p>Rhino, Grasshopper(Rhino Plugin)</p>
+                    </div>                                       
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Elapsed Time:</h3>
+                        <p>1 month (March 2021 - April 2021)</p>
+                    </div>
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Location Specifications:</h3>
+                        <p>Holland Park Surrey, British Columbia</p>
+                    </div>                 
+                    <div class="project-detail-item">
+                        <h3 class="detail-header">Goal: </h3>
+                        <p>Parametrically designed pavilion, maximum 8-metres by 12-metre area, that houses a sculpture.</p>
+                    </div>
+                    
+                    
+                </div>
+                <h2 class="grid-full">Overview</h2>
+                <p class="grid-full">The Hummingbird Pavilion, Figure 1, was a project created for a Spatial Design course. My contributions to the project were in the conceptualization of the project, 3D model creation, and rendering a walkthrough animation of the space.</p>
+                <figure class="iframe-figure-control grid-full">
+                <div class="iframe-resp-wrapper">
+                    <iframe class="resp-iframe" src="https://player.vimeo.com/video/536172375?h=829ee759bf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <figcaption>Figure 1.Final Rendered Video of Hummingbird Pavilion. <a href="https://vimeo.com/536172375">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Fly-through Animation</a> from <a href="https://vimeo.com/user105367965">Alexis Lee</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
             </figure>
-            <h1>Hummingbird Pavilion</h1>
-            <div>
-                <h2>General Project Details</h2>
-                <!-- Table of all the details -->
-                <table>
-                    <tr>
-                        <th>Goal:</th>
-                        <th>Location Specifications:</th>
-                        <th>Elapsed Time:</th>
-                        <th>Role:</th>
-                        <th>Team Members:</th>
-                        <th>Tools:</th>
-                    </tr>
-                    <tr>
-                        <td>Parametrically designed pavilion, maximum 8-metres by 12-metre area, that houses a sculpture.</td>
-                        <td>Holland Park Surrey, British Columbia</td>
-                        <td>1 month (March 2021 - April 2021)</td>
-                        <td>3D Modeler, Renderer</td>
-                        <td>Soraya Elchehimi and Daniel Yeo</td>
-                        <td>Rhino, Grasshopper</td>
-                    </tr>
-                </table>
+
             </div>
        
-        
-            <h2>Overview</h2>
-            <p>The Hummingbird Pavilion, Figure 1, was a project created for a Spatial Design course. My contributions to the project were in the conceptualization of the project, 3D model creation, and rendering a walkthrough animation of the space.</p>
+            
         </section>       
         <!-- The Actual Writing Part -->
         <section id="hbp-conceptualization">
@@ -102,8 +122,10 @@
                     <figcaption>Figure 5. Iterations for lighting pattern design.</figcaption>       
                 </figure>
                 <p class="grid-col-1">The next step was the process of creating the model which I created using the CAD Rhino’s node-based plugin Grasshopper. I created the structure entirely in Grasshopper by combining information found in two different YouTube tutorials to create the petal surface (Daniel Christev, 2016), and the patterns on the surface (Om.egvo, 2019). The structure went through many iterations from the initial form seen in Figure 4 to the final form after experimentations with different light patterns, in Figure 5. The key functions of the final node structure are explained in the video in Figure 6.</p>
-                <figure class="grid-col-2">
-                    <iframe src="https://player.vimeo.com/video/536171668?h=2c10029d06" width="640" height="455" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                <figure class="grid-col-2 iframe-figure-control">
+                    <div class="iframe-resp-wrapper">
+                        <iframe class="resp-iframe" src="https://player.vimeo.com/video/536171668?h=2c10029d06" width="640" height="455" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                     <figcaption>Figure 6. Walkthrough of key functions in Grasshopper node tree.<a href="https://vimeo.com/536171668">IAT 233 Spring 2021: Group 12 Hummingbird Pavilion Grasshopper/Parametric Definition</a> from <a href="https://vimeo.com/user105367965">Alexis Lee</a> on <a href="https://vimeo.com">Vimeo</a>. Narrated by Soraya Elchehimi</figcaption>
                 </figure>
             </div>            
@@ -134,7 +156,7 @@
         <section id="hbp-references">
             <div class="project-section-wrapper">
                 <h2 class="grid-full">References</h2>
-                <ul class="reference-ul">
+                <ul class="reference-ul grid-full">
                     <li>Daniel Christev. (2016, February 1). <em>Grasshopper - Creating a Simple Flower</em> [Video]. YouTube. <a href="url">https://youtu.be/_3_7sDce6ME\</a></li>
                     <li>Om. egvo (2019, August 27).<em> Grasshopper tutorial Cull Pattern-Perforated Surface</em> [Video]. YouTube. <a href="url">https://youtu.be/SEYc37Mr4uM</a></li>
                 </ul>
