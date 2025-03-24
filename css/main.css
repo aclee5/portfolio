@@ -18,7 +18,7 @@
     --swiper-pagination-color: var(--lightAccent);
     --swiper-pagination-bullet-inactive-color: var(--mainBrandColor);
     --swiper-pagination-bullet-inactive-opacity: 0.7;
-    --screenMaxWidth: 80rem;
+    --screenMaxWidth: 75rem;
     --tableColumnMax: 12rem;
     --headingFont: 'Poppins' , sans-serif;
 }
@@ -28,9 +28,6 @@ html{
 
 }
 
-section{
-    display:grid;
-}
 
 * {
     padding: 0;
@@ -38,8 +35,9 @@ section{
     font-family: 'Atkinson Hyperlegible' , sans-serif; 
 }
 
-
-
+section{
+    display:grid;
+}
 
 /* All Text */
 h1{
@@ -114,7 +112,7 @@ video{
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    z-index: -1;
+    
 }
 
 .iframe-figure-control{
@@ -136,7 +134,7 @@ video{
 .project-banner{
     margin-left: 0;
     margin-right: 0;
-    min-height: 40vh;
+    min-height: 50vh;
     padding: 0;
     display: flex;
     align-items: center;
@@ -173,17 +171,8 @@ section .project-section-wrapper{
     max-width: var(--screenMaxWidth);
     
 }
-section .overview-wrapper{
-    max-width: var(--screenMaxWidth);
-    margin:auto;
 
-}
 
-.overview-wrapper h2{
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 /* Project Details */
 .project-details-wrapper{
@@ -213,6 +202,7 @@ section .overview-wrapper{
     margin-bottom: 0;
     margin-top: 0; 
     color: var(--darkShade); 
+    line-height: 1.1rem;
 }
 
 .project-detail-item p {

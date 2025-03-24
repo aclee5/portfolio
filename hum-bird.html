@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/interactive.css">
     <script defer src="js/project_scrollspy.js"></script>
+    <script src="js/image-comp.js"></script>
 </head>
 <body class=".grid">
     <header>
@@ -136,27 +137,34 @@
                 <h2 class="grid-full">Rendering</h2>
                 <p class="grid-col-1">One challenging portion of the project was rendering a walkthrough animation of the model using Rhino. Due to hardware limitations, attempting to render a full animation at once would crash the program due to a shortage in memory resulting in very inconsistent quality renders. Figure 7 is an example of one of these hardware glitches which differs from the expected render in Figure 8. To solve the hardware memory issue, I had to reduce the quality of the images, and render the animation in smaller segments.</p>
                 <!-- Add the comparison overlay -->
-                <figure class="grid-col-2">
-                    <img src="img/hum-bird/humbird-fig-7.png" alt="Poor Render Result with Inverted Shadows.">
-                    <figcaption>Figure 7. A poor render as a result of batch render in Rhino with limited hardware specs. Shows raytracing appearing to have occurred in reverse with only shadow in illuminated.</figcaption>    
+                <figure class="grid-col-2 img-comp-fig-contol">
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                            <img src="img/hum-bird/humbird-fig-8.png" alt="Expected/Standard Render Result with Raytraced Shadows"></div>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="img/hum-bird/humbird-fig-7.png" alt="Poor Render Result with Inverted Shadows.">
+                        </div>
+                    </div>
+                    <script language="javascript">initComparisons()</script>
                 </figure>
-                <figure class="grid-col-2">
-                    <img src="img/hum-bird/humbird-fig-8.png" alt="Expected/Standard Render Result with Raytraced Shadows">
-                    <figcaption>Figure 8. A expected quality render output from Rhino renderer.</figcaption>       
-                </figure>
-                
+                <div class="grid-col-2">
+                    <figcaption>Figure 7. A poor render as a result of batch render in Rhino with limited hardware specs. Shows raytracing appearing to have occurred in reverse with only shadow in illuminated.</figcaption>   
+                    <figcaption>Figure 8. A expected quality render output from Rhino renderer.</figcaption> 
+
+                </div>
+
             </div>
         </section>
         <section id="hbp-reflection">
             <div class="project-section-wrapper">
-                <h2 class="grid-full">Reflection</h2>
-                <p>Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
+                <h2 class="grid-col-1">Reflection</h2>
+                <p class="grid-col-1">Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
             </div>
         </section>
         <section id="hbp-references">
             <div class="project-section-wrapper">
-                <h2 class="grid-full">References</h2>
-                <ul class="reference-ul grid-full">
+                <h2 class="grid-col-1">References</h2>
+                <ul class="reference-ul grid-col-1">
                     <li>Daniel Christev. (2016, February 1). <em>Grasshopper - Creating a Simple Flower</em> [Video]. YouTube. <a href="url">https://youtu.be/_3_7sDce6ME\</a></li>
                     <li>Om. egvo (2019, August 27).<em> Grasshopper tutorial Cull Pattern-Perforated Surface</em> [Video]. YouTube. <a href="url">https://youtu.be/SEYc37Mr4uM</a></li>
                 </ul>
