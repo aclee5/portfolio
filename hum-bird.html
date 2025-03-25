@@ -16,16 +16,30 @@
     <script src="js/image-comp.js"></script>
 </head>
 <body class=".grid">
+    <!-- Main Navigation -->
     <header>
-        <nav>
-            <a href="index.html">Alexis Lee</a>
-            <ul>
-                <li><a href="index.html#hp-games-browse">Games</a></li>
-                <li><a href="index.html#hp-video-browse">Animation & Video</a></li>
-                <li><a href="index.html#hp-design-browse">Design</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="index.html#about">About</a></li>
-            </ul>
+        <nav class="main-nav center">
+            <a href="index.html" class="nav-button logo-container">
+                <img src="img/misc/logo_lightViolet.svg" alt="Alexis Personal Logo">
+                <!-- <p>Alexis Lee</p> -->
+            </a>
+            
+            <div class="page-buttons" id="page-links">
+                <a href="javascript:void(0);" class="nav-button menu-icon" onclick="responsiveNav()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </a>
+                <a href="index.html#hp-games-browse" class="nav-button">Games</a>
+                <a href="index.html#hp-video-browse" class="nav-button">Animation & Video</a>
+                <a href="index.html#hp-design-browse" class="nav-button">Design</a>
+                <a href="gallery.html" class="nav-button">Gallery</a>
+                <a href="index.html#about" class="nav-button">About</a>
+                
+
+            </div>
+            <script src="js/responsive_nav.js"></script>
+
         </nav>
     </header>
     <main>
@@ -41,7 +55,7 @@
             <a href="#hbp-references" data-section="References"></a>            
         </div>
         <!-- Overview Section -->
-        <section id="hbp-overview">
+        <section id="hbp-overview" class="project-section">
             <!-- Banner/Hero -->
             <div class="project-banner">
                 <h1>Hummingbird Pavilion</h1>
@@ -59,7 +73,7 @@
                     </div>
                     <div class="project-detail-item">
                         <h3 class="detail-header">Team Members:</h3>
-                        <p>Soraya Elchehimi and Daniel Yeo</p>
+                        <ul>Soraya Elchehimi and Daniel Yeo</p>
                     </div>
                     
                     <div class="project-detail-item">
@@ -95,7 +109,7 @@
             
         </section>       
         <!-- The Actual Writing Part -->
-        <section id="hbp-conceptualization">
+        <section id="hbp-conceptualization" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-full">Conceptualization</h2>
                 <figure class="grid-col-1">
@@ -111,7 +125,7 @@
 
             </div>            
         </section>
-        <section id="hbp-modelling">
+        <section id="hbp-modelling" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-full">Modelling in Rhino</h2>
                 <figure class="grid-col-1">
@@ -132,7 +146,7 @@
             </div>            
             
         </section>
-        <section id="hbp-rendering">
+        <section id="hbp-rendering" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-full">Rendering</h2>
                 <p class="grid-col-1">One challenging portion of the project was rendering a walkthrough animation of the model using Rhino. Due to hardware limitations, attempting to render a full animation at once would crash the program due to a shortage in memory resulting in very inconsistent quality renders. Figure 7 is an example of one of these hardware glitches which differs from the expected render in Figure 8. To solve the hardware memory issue, I had to reduce the quality of the images, and render the animation in smaller segments.</p>
@@ -155,13 +169,13 @@
 
             </div>
         </section>
-        <section id="hbp-reflection">
+        <section id="hbp-reflection" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-col-1">Reflection</h2>
                 <p class="grid-col-1">Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
             </div>
         </section>
-        <section id="hbp-references">
+        <section id="hbp-references" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-col-1">References</h2>
                 <ul class="reference-ul grid-col-1">

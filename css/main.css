@@ -18,7 +18,7 @@
     --swiper-pagination-color: var(--lightAccent);
     --swiper-pagination-bullet-inactive-color: var(--mainBrandColor);
     --swiper-pagination-bullet-inactive-opacity: 0.7;
-    --screenMaxWidth: 75rem;
+    --screenMaxWidth: 80rem;
     --tableColumnMax: 12rem;
     --headingFont: 'Poppins' , sans-serif;
 }
@@ -33,11 +33,31 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Atkinson Hyperlegible' , sans-serif; 
+    margin: 0;
 }
 
-section{
+section .project-section{
     display:grid;
+    
 }
+
+.hp-body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hp-body section{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--screenMaxWidth);
+}
+
+
+/* section:nth-of-type(even){
+    background-color: var(--darkAccent);
+    color: var(--lightShade);
+} */
 
 /* All Text */
 h1{
@@ -57,6 +77,7 @@ h2{
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    color: var(--darkShade)
 }
 p, ul, ol{
     max-width: 40rem;
@@ -65,6 +86,7 @@ p, ul, ol{
     margin-top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    
     
 }
 
@@ -87,6 +109,7 @@ figcaption{
     margin-top: 0.5rem;
     margin-bottom: 0.75rem;
     background-color: var(--lightShade);
+    color: var(--darkShade)
 }
 
 figcaption a{
@@ -96,6 +119,90 @@ figcaption a{
 figcaption a:hover, figcaption a:focus{
     color: var(--lightAccent-Darker);
 }
+
+/* Main Navigation Styling */
+header{
+    background-color: var(--darkAccent);
+}
+.main-nav{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--screenMaxWidth);
+
+}
+
+.page-buttons{
+    background-color: var(--darkAccent);
+    overflow: hidden;
+}
+
+
+.nav-button{
+    display:inline-block;
+    font-weight: 800;
+    text-transform: lowercase;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-align: center;
+    color: white;
+    background-color: var(--darkAccent);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    height: 100%;
+}
+.nav-button:hover, .nav-button:focus{
+    background-color: var(--lightAccent-Darker);
+    
+}
+.logo-container img{
+    width:40%;
+    padding: 0;
+}
+
+.logo-container{
+    padding: 1rem;
+    text-align: left;
+
+}
+
+.nav-button.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 40rem){
+    .logo-container{
+        align-self: flex-start;
+    }
+    .page-buttons .nav-button{
+        display: none
+    }
+
+    .page-buttons .nav-button.menu-icon{
+        float: right;
+        display: block;
+    }
+
+    .page-buttons.responsive{
+        position: relative;
+        right:0;
+        left:0;
+    }
+
+    .page-buttons.responsive .nav-button{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+
+/* section:nth-of-type(even) a{
+    color: var(--lightAccent);
+} */
 /* Video  */
 video{
     max-width:100%;
@@ -164,10 +271,10 @@ video{
 }
 
 section .project-section-wrapper{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin:auto;
     padding:2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin:auto;
     max-width: var(--screenMaxWidth);
     
 }
@@ -242,7 +349,8 @@ section .project-section-wrapper{
     }
     
     .project-detail-item h3.detail-header{
-        font-size: 1.2rem;
+        font-size: 1.1;
+        line-height: 1.2rem;
     }
 
 

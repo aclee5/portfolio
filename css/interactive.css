@@ -2,6 +2,11 @@
 /* Card Carosel */
 .card-wrapper{
     display: flex;
+    margin: 0 3rem 1.75rem;
+    padding: 1.5rem 0.75rem;
+    overflow: hidden;
+    max-width: var(--screenMaxWidth);
+    
 }
 .card-list .card-item{
     list-style: none;
@@ -63,13 +68,6 @@
     background-color: var(--darkAccent-Background);    
 }
 
-.card-wrapper{
-    max-width: var(--screenMaxWidth);
-    margin: 0 3rem 1.75rem;
-    padding: 1.5rem 0.75rem;
-    overflow: hidden;
-}
-
 .card-list .card-link .card-title{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -97,6 +95,17 @@
     margin: 0.3rem;
     margin-left: 0;
     
+}
+
+@media screen and (max-width: 40rem) {
+    .card-list .card-link .card-type{
+        font-size: 0.7rem;
+        padding:0.3rem 0.5rem;
+    }
+    .card-list .card-link .card-title{
+        font-size: 1.1rem;
+
+    }    
 }
 
 /* Items for sub nav scroll spy */
@@ -168,6 +177,7 @@
         border-radius: 1rem;
         transform: translate(3rem, -50%);
         transition: all 400ms ease;
+        z-index: 10;
     }
     .nav-scroll-indicator.active {
         transform: translate(-30%, -50%);

@@ -14,18 +14,31 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/interactive.css">
 </head>
-<body>
+<body class="hp-body">
     <!-- Main Navigation -->
     <header>
-        <nav>
-            <a href="index.html">Alexis Lee</a>
-            <ul>
-                <li><a href="index.html#hp-games-browse">Games</a></li>
-                <li><a href="index.html#hp-video-browse">Animation & Video</a></li>
-                <li><a href="index.html#hp-design-browse">Design</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="index.html#about">About</a></li>
-            </ul>
+        <nav class="main-nav center">
+            <a href="index.html" class="nav-button logo-container">
+                <img src="img/misc/logo_lightViolet.svg" alt="Alexis Personal Logo">
+                <!-- <p>Alexis Lee</p> -->
+            </a>
+            
+            <div class="page-buttons" id="page-links">
+                <a href="javascript:void(0);" class="nav-button menu-icon" onclick="responsiveNav()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </a>
+                <a href="index.html#hp-games-browse" class="nav-button">Games</a>
+                <a href="index.html#hp-video-browse" class="nav-button">Animation & Video</a>
+                <a href="index.html#hp-design-browse" class="nav-button">Design</a>
+                <a href="gallery.html" class="nav-button">Gallery</a>
+                <a href="index.html#about" class="nav-button">About</a>
+                
+
+            </div>
+            <script src="js/responsive_nav.js"></script>
+
         </nav>
     </header>
     <main>
@@ -162,7 +175,7 @@
                                 <img src="img/misc/thumbnail_test_image.png" alt="Test Container" class="card-image">
                                 <p class="card-type type-personal">Personal</p>
                                 <h3 class="card-title">The Fisherman Short Film | 2024</h3>
-                                <p class="card-role">3D Modeler, Sound Designer etc</p>
+                                <h4 class="card-role">3D Modeler, Sound Designer etc</h4>
                                 <p class="card-description">This is the logline of the project. Should be a couple sentences long</p>
                             </a>
                         </li>
@@ -189,7 +202,7 @@
                                 <img src="img/hum-bird/humbird-fig-background.jpg" alt="Hummingbird Pavilion Project" class="card-image">
                                 <p class="card-type type-academic">Academic</p>
                                 <h3 class="card-title">Hummingbird Pavilion | 2021</h3>
-                                <p class="card-role">3D Modeler, Renderer</p>
+                                <h4 class="card-role">3D Modeler, Renderer</h4>
                                 <p class="card-description">A spatial design project with the goal of designing a pavilion located in Surrey's Holland Park.</p>
                             </a>
                         </li>
