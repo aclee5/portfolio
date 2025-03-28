@@ -76,6 +76,8 @@
     font-weight: 300;
     margin: 0.3rem;
     margin-left: 0;
+    color: var(--darkAccent);
+    padding: 0;
 }
 
 .card-list .card-link .card-role{
@@ -85,6 +87,7 @@
     font-weight: 700;
     margin: 0.3rem;
     margin-left: 0;
+    color: var(--darkAccent);
 }
 
 .card-list .card-link .card-description{
@@ -94,6 +97,8 @@
     font-weight: 100;
     margin: 0.3rem;
     margin-left: 0;
+    padding-left: 0;
+    color: var(--darkAccent);
     
 }
 
@@ -155,6 +160,8 @@
     box-shadow: 0 0.5rem 0.5rem var(--lightAccent-Background);
     opacity: 0; 
     transition: all 400ms ease;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 .nav-scroll-indicator a:hover::before, .nav-scroll-indicator a:focus::before{

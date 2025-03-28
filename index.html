@@ -15,35 +15,44 @@
     <link rel="stylesheet" href="css/interactive.css">
 </head>
 <body class="hp-body">
-    <!-- Main Navigation -->
-    <header>
-        <nav class="main-nav center">
-            <a href="index.html" class="nav-button logo-container">
-                <img src="img/misc/logo_lightViolet.svg" alt="Alexis Personal Logo">
-                <!-- <p>Alexis Lee</p> -->
-            </a>
-            
-            <div class="page-buttons" id="page-links">
-                <a href="javascript:void(0);" class="nav-button menu-icon" onclick="responsiveNav()">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </a>
-                <a href="index.html#hp-games-browse" class="nav-button">Games</a>
-                <a href="index.html#hp-video-browse" class="nav-button">Animation & Video</a>
-                <a href="index.html#hp-design-browse" class="nav-button">Design</a>
-                <a href="gallery.html" class="nav-button">Gallery</a>
-                <a href="index.html#about" class="nav-button">About</a>
-                
-
-            </div>
-            <script src="js/responsive_nav.js"></script>
-
-        </nav>
-    </header>
+  
     <main>
+        <section id="hp-hero">
+            <header>
+                <!-- Main Navigation -->
+                <nav class="main-nav center">
+                    <a href="index.html" class="nav-button logo-container">
+                        <img src="img/misc/logo_darkViolet.svg" alt="Alexis Personal Logo">
+                        <p>Alexis Lee</p>
+                    </a>
+                    
+                    <div class="page-buttons" id="page-links">
+                        <a href="javascript:void(0);" class="nav-button menu-icon" onclick="responsiveNav()">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a>
+                        <a href="index.html#hp-games-browse" class="nav-button">Games</a>
+                        <a href="index.html#hp-video-browse" class="nav-button">Animation & Video</a>
+                        <a href="index.html#hp-design-browse" class="nav-button">Design</a>
+                        <a href="gallery.html" class="nav-button">Gallery</a>
+                        <a href="index.html#about" class="nav-button">About</a>
+                        <a href="#contact" class="nav-button">Contact</a>
+                        
+
+                    </div>
+                    <script src="js/responsive_nav.js"></script>
+
+                </nav>
+
+            </header>
+          
          <!-- Hero Section -->
-        <h1></h1>
+          <h1>
+            Hi! I'm an animator, illustrator, and 3D generalist based in Burnaby, British Columbia.
+          </h1>       
+
+        </section>
 
         <!-- Games Browse Section -->
         <section id="hp-games-browse">
@@ -121,7 +130,7 @@
         <section id="hp-video-browse">
             <h2>Animation & Video</h2>
             <p>Motion picture projects that are passively viewed e.g., short films, animations, promotional videos etc.</p>
-            <div id="hp-games-browse-carosel" class="card-container swiper">
+            <div id="hp-video-browse-carosel" class="card-container swiper">
                 <div class="card-wrapper">
                     <ul class="card-list swiper-wrapper">
                         <!-- individual Card Item -->
@@ -193,7 +202,7 @@
         <section id="hp-design-browse">
             <h2>Design</h2>
             <p>Projects design and static representation are the priority.</p>
-            <div id="hp-games-browse-carosel" class="card-container swiper">
+            <div id="hp-design-browse-carosel" class="card-container swiper">
                 <div class="card-wrapper">
                     <ul class="card-list swiper-wrapper">
                         <!-- individual Card Item -->
@@ -216,6 +225,7 @@
         </section>
         <section id="about">
             <h2>Hi I'm Alexis</h2>
+            <p>This is some dummy text for previewing the about section</p>
         </section>
         <!-- Script for Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -224,6 +234,34 @@
 
     </main>
     <footer>
+        <section id="contact">
+            <div id="quick-links">
+                <h2>Quick Links</h2>
+                    <h3>General</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                        </ul>
+                    <h3>Projects</h3>
+                        <ul>
+                            <li><a href="index.html#hp-games-browse">Games</a></li>
+                            <li><a href="index.html#hp-video-browse">Animation & Video</a></li>
+                            <li><a href="index.html#hp-design-browse">Design</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+            </div>
+            <div id="contact-info">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li>Email:</li>
+                    <li><a href="mailto:a.cgy.lee@gmail.com">a.cgy.lee@gmail.com</a></li>
+                    <li>LinkedIn:</li>
+                    <li><a href="https://www.linkedin.com/in/alexis-lee-a5a797166/">www.linkedin.com/in/alexis-lee-a5a797166/</a></li>
+                </ul>
+
+            </div>
+        <p>&#169; 2025 Alexis Lee</p>
+        </section>
 
     </footer>    
 </body>

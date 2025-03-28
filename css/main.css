@@ -8,7 +8,7 @@
     --mainBrandColor-Darker: #9c7f9f;
     --mainBrandColor-Background: #F2DCF5;
     --mainBrandColor-Transparent: #c7aecb83;
-    --darkAccent: #675582;
+    --darkAccent: #543781;
     --darkAccent-Transparent: #67558253;
     --darkAccent-Background:#DDC7FF;
     --darkShade: #5e104f;
@@ -77,7 +77,12 @@ h2{
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: var(--darkShade)
+    color: var(--darkAccent);
+}
+
+h3{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 p, ul, ol{
     max-width: 40rem;
@@ -121,9 +126,6 @@ figcaption a:hover, figcaption a:focus{
 }
 
 /* Main Navigation Styling */
-header{
-    background-color: var(--darkAccent);
-}
 .main-nav{
     overflow: hidden;
     display: flex;
@@ -135,38 +137,55 @@ header{
 }
 
 .page-buttons{
-    background-color: var(--darkAccent);
     overflow: hidden;
 }
 
 
 .nav-button{
+    font-family: 'Poppins', sans-serif;
     display:inline-block;
     font-weight: 800;
     text-transform: lowercase;
     text-decoration: none;
     transition-duration: 0.4s;
     text-align: center;
-    color: white;
-    background-color: var(--darkAccent);
+    color: var(--darkAccent);
     width: fit-content;
     padding: 0.5rem 1rem;
     margin: 0;
     height: 100%;
 }
+
 .nav-button:hover, .nav-button:focus{
-    background-color: var(--lightAccent-Darker);
+    color: var(--lightAccent);
     
 }
 .logo-container img{
-    width:40%;
     padding: 0;
+    height: 20%;
+    width: 20%;
+    transition-duration: 0.4s;
+
+}
+
+.logo-container:hover img, .logo-container:focus img{
+    filter:hue-rotate(95deg) brightness(3);
 }
 
 .logo-container{
     padding: 1rem;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
 
+.logo-container p {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-button.menu-icon{
@@ -298,7 +317,7 @@ section .project-section-wrapper{
 .project-details-wrapper .project-detail-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-column-gap: 1rem;
+    grid-row-gap: 0rem;
 }
 
 .project-detail-item h3.detail-header{
@@ -316,20 +335,17 @@ section .project-section-wrapper{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.1rem;
+    padding: 0;
 }
 
 @media (min-Width:55rem){
     h1{
         font-size: 3rem;
-        padding: 0;
     }
     h2 {
         font-size: 1.75rem;
-        padding: 0;
     }
     p, ul{
-        padding-left: 0;
-        padding-right: 0;
 
     }
     .project-details-wrapper{
@@ -344,7 +360,6 @@ section .project-section-wrapper{
         display: grid;
         grid-template-rows: 2fr 3fr;
         grid-template-columns: auto;
-        grid-row-gap: 1rem;
         
     }
     
@@ -355,4 +370,26 @@ section .project-section-wrapper{
 
 
 
+}
+
+/* Hero Styling */
+ section#hp-hero{
+    min-height: 75vh;
+ }
+
+/* footer styling */
+section#contact ul{
+    list-style: none;
+    
+}
+
+section#contact div#contact-info ul li:nth-of-type(odd){
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+section#contact div ul li a {
+    text-decoration: none;
+    color: var(--darkAccent);
 }
