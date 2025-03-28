@@ -162,12 +162,12 @@
     transition: all 400ms ease;
     font-family: "Poppins", sans-serif;
     
+    
 }
 
 .nav-scroll-indicator a:hover::before, .nav-scroll-indicator a:focus::before{
     opacity: 1;
     transform: translate(0, -50%);
-
 
 }
 

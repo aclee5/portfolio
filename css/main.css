@@ -158,6 +158,10 @@ figcaption a:hover, figcaption a:focus{
 
 .nav-button:hover, .nav-button:focus{
     color: var(--lightAccent);
+    border-inline: 0.2rem dotted;
+    writing-mode: horizontal-tb;
+    
+    
     
 }
 .logo-container img{
@@ -178,6 +182,7 @@ figcaption a:hover, figcaption a:focus{
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 15rem;
     
     
 }
@@ -392,4 +397,9 @@ section#contact div#contact-info ul li:nth-of-type(odd){
 section#contact div ul li a {
     text-decoration: none;
     color: var(--darkAccent);
+}
+
+section#contact div ul li a:hover, section#contact div ul li a:focus{
+    text-decoration: underline;
+    color: var(--lightAccent-Darker);
 }
