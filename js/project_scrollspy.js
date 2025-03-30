@@ -13,7 +13,10 @@ const addActiveClass = (entries, observer) => {
         if(entry.isIntersecting){
             let currentDot = document.querySelector(`.nav-scroll-indicator a[href='#${entry.target.id}']`);
             removeActiveClass();
-            currentDot.classList.add("active");
+            if(currentDot != null){
+                currentDot.classList.add("active");
+            }
+            
         };
     });
 };
