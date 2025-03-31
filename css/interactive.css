@@ -10,6 +10,7 @@
 }
 .card-list .card-item{
     list-style: none;
+    height: 100%;
 }
 .card-list .card-item .card-link{
     user-select: none;
@@ -23,6 +24,7 @@
     border: 0.15rem solid transparent;
     box-shadow: 0 0.5rem 0.5rem rgba(50, 0, 50, 0.15);
     transition: 0.4s ease;
+    
 
 }
 .card-list .card-item .card-link:hover, .card-list .card-item .card-link:focus {
