@@ -10,7 +10,6 @@
 }
 .card-list .card-item{
     list-style: none;
-    height: 100%;
 }
 .card-list .card-item .card-link{
     user-select: none;
@@ -60,7 +59,7 @@
 }
 
 
-.type-freelance{
+.type-paid{
     color: var(--lightAccent-Darker);
     background-color: var(--lightAccent-Background);
 }
