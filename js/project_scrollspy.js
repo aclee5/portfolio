@@ -11,6 +11,8 @@ const removeActiveClass = () => {
 const addActiveClass = (entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
+            // Section Debug Log
+            // console.log(entry.target.id);
             let currentDot = document.querySelector(`.nav-scroll-indicator a[href='#${entry.target.id}']`);
             removeActiveClass();
             if(currentDot != null){
@@ -22,14 +24,14 @@ const addActiveClass = (entries, observer) => {
 };
 
 const options = {
-    threshold: 0.6
+   threshold: 0.3
 };
 
 const observer = new IntersectionObserver(addActiveClass, options);
-const sectoions = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section");
 
 
-sectoions.forEach(section =>{
+sections.forEach(section =>{
     observer.observe(section);
 
 });
