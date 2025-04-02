@@ -94,6 +94,18 @@ p, ul, ol{
     
     
 }
+ul{
+    list-style: circle var(--lightAccent);
+}
+
+ul li a {
+    color: var(--darkAccent);
+    text-decoration: none;
+}
+ul li a:hover,ul li a:focus{
+    color: var(--lightAccent-Darker);
+    text-decoration: underline;
+}
 
 img {
     width: 100%;
