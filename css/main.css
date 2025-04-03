@@ -25,6 +25,7 @@
 
 html{
     scroll-behavior: smooth;
+    
 
 }
 
@@ -39,6 +40,10 @@ html{
 section .project-section{
     display:grid;
     
+    
+}
+body{
+    background: url("/img/misc/white-paper-texture-tileable.png");
 }
 
 .hp-body{
