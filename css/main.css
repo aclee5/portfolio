@@ -29,7 +29,12 @@ html{
 
 }
 
-
+body{
+    background-image: url(../img/misc/white-paper-texture-tileable.png);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    
+}
 * {
     padding: 0;
     box-sizing: border-box;
@@ -42,9 +47,7 @@ section .project-section{
     
     
 }
-body{
-    background: url("/img/misc/white-paper-texture-tileable.png");
-}
+    
 
 .hp-body{
     display: flex;
