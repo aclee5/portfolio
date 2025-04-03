@@ -179,7 +179,6 @@ figcaption a:hover, figcaption a:focus{
     display:inline-block;
     font-weight: 800;
     text-transform: lowercase;
-    text-decoration: none;
     transition-duration: 0.4s;
     text-align: center;
     color: var(--darkAccent);
@@ -187,12 +186,14 @@ figcaption a:hover, figcaption a:focus{
     padding: 0.5rem 1rem;
     margin: 0;
     height: 100%;
+    text-decoration: none;
 }
 
 .nav-button:hover, .nav-button:focus{
     color: var(--lightAccent);
     border-inline: 0.2rem dotted;
     writing-mode: horizontal-tb;
+    text-decoration: none;
     
     
     
