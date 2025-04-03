@@ -101,6 +101,16 @@ ul{
     list-style: circle var(--lightAccent);
 }
 
+a{
+    color: var(--darkAccent);
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color: var(--lightAccent-Darker);
+    text-decoration: underline;
+}
+
 ul li a {
     color: var(--darkAccent);
     text-decoration: none;
