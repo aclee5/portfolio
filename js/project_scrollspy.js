@@ -12,7 +12,7 @@ const addActiveClass = (entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             // Section Debug Log
-            // console.log(entry.target.id);
+            console.log(entry.target.id);
             let currentDot = document.querySelector(`.nav-scroll-indicator a[href='#${entry.target.id}']`);
             removeActiveClass();
             if(currentDot != null){

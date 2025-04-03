@@ -8,6 +8,14 @@
     max-width: var(--screenMaxWidth);
     
 }
+
+.image-wrapper{
+    display: flex;
+    padding: 0.15rem;
+    overflow: hidden;
+    max-width: var(--screenMaxWidth);
+
+}
 .card-list .card-item{
     list-style: none;
 }

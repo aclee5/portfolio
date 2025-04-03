@@ -1,6 +1,6 @@
 // Script from https://swiperjs.com/get-started
 new Swiper('.card-wrapper', {
-    loop: true,
+    // loop: true,
     spaceBetween: 30, 
   
     // If we need pagination
