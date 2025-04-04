@@ -46,6 +46,7 @@ section#contact div:not(:first-child){
         grid-auto-flow: row;
         grid-column-gap:1rem;
         grid-row-gap: 1rem;
+        max-width: var(--screenMaxWidth);
     }
 
     .project-section-wrapper .grid-col-1{
