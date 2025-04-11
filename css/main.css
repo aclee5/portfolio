@@ -77,6 +77,8 @@ h1{
     padding-right: 1rem;
     
 }
+
+
 h2{
     font-family: var(--headingFont);
     margin-top: 0;
@@ -92,6 +94,7 @@ h3{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 p, ul, ol{
     max-width: 40rem;
     font-size: 1rem;
@@ -377,15 +380,61 @@ section .project-section-wrapper{
     padding: 0;
 }
 
+/* Hero Styling */
+section#hp-hero{
+    min-height: 75vh;
+}
+div.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hero img.avatar-animation{
+    filter: brightness(140%);
+}
+
+h1.website-title{
+    font-size: 1.5rem;
+    max-height: fit-content;
+    align-self: center;
+    font-weight: 300;
+
+}
+
+h1.website-title em{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: var(--darkAccent);
+}
+h1.website-title em:nth-of-type(even){
+    color:var(--lightAccent-Darker)
+}
+
+#hp-hero img.avatar-animation{
+}
+
+@media (min-Width:42rem) {
+    div.hero{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    h1.website-title{
+        font-size: 2.5rem; 
+    }
+    
+
+    
+}
+
 @media (min-Width:55rem){
     h1{
         font-size: 3rem;
     }
     h2 {
         font-size: 1.75rem;
-    }
-    p, ul{
-
     }
     .project-details-wrapper{
         flex-direction: row;
@@ -409,14 +458,9 @@ section .project-section-wrapper{
         padding: 0;
     }
 
-
-
+    
 }
 
-/* Hero Styling */
- section#hp-hero{
-    min-height: 75vh;
- }
 
 /* footer styling */
 section#contact{
