@@ -30,6 +30,26 @@ section#contact{
     padding-bottom: 3rem;
 }
 
+section#about{
+    display: grid;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+
+section#about img{
+    height: 100%;
+    max-width: 27rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#about p{
+    padding-bottom: 2rem;
+}
+
 section#contact h3{
     margin-top: 0.5rem;
 }
@@ -99,6 +119,22 @@ section#contact div:not(:first-child){
     section#contact div:not(:first-child){
         margin-top: 0;
     }
+
+    section#about{
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto;
+    }
+    section#about img{
+        grid-column: 2 / 3;
+        grid-row-start: 2;
+        
+        
+    }
+    section#about p{
+        grid-column: 1 / 2;
+        grid-row-start: 2;
+    }
+
 
 }
 
