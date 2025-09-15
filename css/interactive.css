@@ -238,11 +238,12 @@
 .img-comp-img {
     position: absolute;
     height: 100%;
+    
     overflow: hidden;
 }
 
 .img-comp-img img {
-    /* display: inline-block; */
+    display: inline-block;
     align-self: center;
     width: initial;
     height: 100%;

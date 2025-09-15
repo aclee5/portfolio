@@ -9,7 +9,7 @@
     --mainBrandColor-Background: #F2DCF5;
     --mainBrandColor-Transparent: #c7aecb83;
     --darkAccent: #543781;
-    --darkAccent-Transparent: #67558253;
+    --darkAccent-Transparent: #5c4a779e;
     --darkAccent-Background:#DDC7FF;
     --darkShade: #5e104f;
     --darkShade-Transparent: #5e104e9c;
@@ -105,8 +105,15 @@ p, ul, ol{
     
 }
 
+p.note{
+    font-size: 0.8rem;
+    padding: 0rem;
+    line-height: 0.8rem;
+    margin: 0rem;
+    color: var(--darkAccent-Transparent);
+    
 
-
+}
 
 ul{
     list-style: circle var(--lightAccent);
