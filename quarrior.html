@@ -51,7 +51,14 @@
                 <span class="material-symbols-outlined">arrow_back_ios_new</span>
             </div>
             <a href="#quarrior-overview" class="active" data-section="Overview"></a>
-            <a href="#quarrior-reflection" data-section="Reflection"></a>            
+            <a href="#quarrior-charDesign" data-section="Character Design"></a>
+            <a href="#quarrior-modelling" data-section="Modelling"></a>   
+            <a href="#quarrior-texturing" data-section="Texturing"></a>   
+            <a href="#quarrior-animation" data-section="Animation"></a>      
+            <a href="#quarrior-enviroDesign" data-section="Environment Design"></a>   
+            <a href="#quarrior-soundDesign" data-section="Sound Design"></a>   
+            <a href="#quarrior-reflection" data-section="Reflection"></a>
+            <a href="#quarrior-references" data-section="References"></a>               
         </div>
         <!-- Overview Section -->
         <section id="quarrior-overview" class="project-section">
@@ -91,18 +98,18 @@
                     
                 </div>
                 <h2 class="grid-full">Overview</h2>
-                <p class="grid-full">Entry In Progress. Check Back for Updates</p>
-                <a href="https://drive.google.com/file/d/1qQZgEIl_wT_OAn2QkXajAZbc_apAZNgi/view?usp=sharing">
-                    <!-- <div>
-                        <span class="material-symbols-outlined">
-                            download
-                            </span>
-                        <div>
-                            <h4>Try the Game</h4>
-                            <p>Download the .ZIP file with the .EXE</p>
-                        </div>
+                <p class="grid-col-1">The <em>Quarrior</em> is a short single-level boss battle game I developed with my teammate as a personal project intended to expand my skillset regarding 3D character creation. The game centers around a young miner who must defeat a cave-dwelling rock titan to free their town's mine. One skill set that I particularly wanted to work on with this project was working in the texturing program Substance Painter, which I had recently acquired and had not worked with on other projects previously. Although that was a focus, I was responsible for executing the visual direction and overseeing all aspects related to the game's aesthetics, while my teammate concentrated on the interactive experiences. </p>
+                <a href="https://drive.google.com/file/d/1jRIOOlm9NOnu_prSwN4gcxVhR8DhkGoY/view?usp=drive_link" class="grid-col-2 action-button">
+                    
+                    <span class="material-symbols-outlined">
+                        download
+                        </span>
+                    
+                    <h4>Try the Game</h4>
+                    <p>Download the .ZIP file with the .EXE</p>
+                    
 
-                    </div> -->
+                   
                 </a>
 
             </div>
@@ -110,18 +117,169 @@
             
         </section>       
 
-        <!-- <section id="hbp-rendering" class="project-section">
+        <section id="quarrior-charDesign" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Character Design</h2>
+                <figure class="grid-col-1">
+                    <img src="img/quarrior/quarrior-fig-1.png" alt="Final Character Design for Miner">
+                    <figcaption>Figure 1. Final character design for Miner(Player Character).</figcaption>
+
+                </figure>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-2.png" alt="Final Character Design for Rock Titan">
+                    <figcaption>Figure 2. Final character design for Rock Tian(Game's Boss).</figcaption>
+                </figure>
+                <p class="grid-col-1">Figures 1 and 2 show the final character design sheets for the miner and the rock titan. After the team agreed on the general idea of the backstory and setting for the game, I began gathering reference images from both historical and fictional sources to inspire the design of the characters as seen in Figure 3. This mixture of references helped identify features to include in the design and find the balance between those that were aesthetically pleasing and those that were more functional to the game world.</p>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-3.png" alt="Collage of references for Miner">
+                    <figcaption>Figure 3. References gathered for Miner's design.</figcaption>
+                </figure>
+                <p class="grid-col-1">From the references, I began experimenting with the silhouettes of what a character could look like, using those silhouettes to quickly iterate on specific features as seen in the sketches in Figures 4 and 5. As gender was not an aspect of the player character that was discussed as particularly important to the game at this point, I tried to keep the features as androgenous as possible so it could be pushed more masculine or feminine later if it became important further on in the development process. A potentially anthropomorphic angle was explored, which would have pushed the game world more fantastical, as seen in references and a head sketch in Figure 4. As this project was meant to be produced on a short timeline, it was scrapped to use pre-existing animations from sources like Mixamo without complications with proportions. Once most of each respective character’s proportions and features were finalized, I also created a scaling guide, as seen in Figure 6, a couple of versions of the miner set at different scales placed next to the rock titan for comparison. This scaling guide was used in discussions with my partner to help us understand which scale would be both threatening and reasonably believable for the miner to defeat, given the mechanics we wanted to implement.
+                </p>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-4.jpg" alt="Initial Paper Sketch of Miner">
+                    <figcaption>Figure 4. Initial paper sketch of Miner.</figcaption>
+                </figure>
+                <figure class="grid-col-1">
+                    <img src="img/quarrior/quarrior-fig-5.png" alt="Sketches of different character silhouette options for Miner">
+                    <figcaption>Figure 5. Sketched experiments for Miner's silhouette.</figcaption>
+                </figure>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-6.png" alt="Image of Rock Titan design along with several smaller versions of Miner">
+                    <figcaption>Figure 6. Different options for scaling between Rock Titan and Miner.</figcaption>
+                </figure>
+
+            </div>
+        </section>
+         <section id="quarrior-modelling" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Modelling</h2>
+                <p class="grid-col-1">While modelling the characters for this project, I wanted to pay more attention to details and explore aspects of the modelling process that I wasn’t able to with other projects due to time constraints. One aspect was paying attention to the polycount while modelling to improve the game's optimization and performance. I referenced the 20,000 to 60,000 triangle range recommended for high detail characters in PC/Console games made with Unity in Dmytro Tkalych’s 3D-Ace Studio blog post. The triangle counts for the final game models fell well within that range, with the miner having a triangle count of  31,208 and the rock titan having 20,328.</p>
+                <div class="grid-col-2 grid gutter">
+                    <figure class="grid-col-1">
+                        <img src="img/quarrior/quarrior-fig-7.png" alt="Miner Model with less details"/>
+                        <figcaption>Figure 7. Low-Poly model of the Miner used in game.</figcaption>
+                    </figure>
+                    <figure class="grid-col-2">
+                        <img src="img/quarrior/quarrior-fig-8.png" alt="Miner Model with more details sculpted on">
+                        <figcaption>Figure 8. High-Poly model of Miner with surface details sculpted on.</figcaption>
+                    </figure>
+                </div>
+                
+                
+              
+            </div>
+        </section>
+         <section id="quarrior-texturing" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Texturing</h2>
+                <p class="grid-col-1">A skillset that I wanted to improve during this project was texturing. Rather than using a procedural workflow in Blender or working directly in a drawing program like Photoshop, I decided to use and learn Substance Painter for the first time in this project. I quickly became comfortable with the program’s general workflow, from baking the high-poly mesh details onto normal maps to using generators and filters to achieve a more painterly look, as seen on the diffuse map progress image in Figure 9. Working within the workflow allowed me to get a lot of experience with other important maps (e.g., height, roughness, and ID maps) for texturing that I hadn’t touched in previous projects. Figure 10 shows the finished textures on the miner’s model in Substance Painter. </p>
+                <figure class="grid-col-1">
+                    <img src="img/quarrior/quarrior-fig-9.png" alt="Diffuse(color) map for Miner shown on Model with coat more detailed">
+                    <figcaption>Figure 9. In-progress image of Miner's diffuse map being made with generators to emulate brushwork on jacket.</figcaption>
+                </figure>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-10.png" alt="Full Miner model with all textures applied">
+                    <figcaption>Figure 10. Fully textured Miner modeled as it appears in Substance Painter.</figcaption>
+                </figure>
+                
+            </div>
+        </section>
+         <section id="quarrior-animation" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Animation</h2>
+                <p class="grid-col-1">As this was designed to be a short project, the team tried to use animations from Mixamo to reduce the work of animating everything. While that worked for the humanoid form of the miner, the distorted proportions of the rock titan required custom animations. Figure 11 shows all the character animations that I created for the rock titan. Aside from just character animations, I also made most of the explosion effects for the miner’s dynamite attack. </p>
+                <figure class="grid-col-2">
+                    <video width="900" height="900" controls>
+                        <source src="img/quarrior/quarrior-fig-11.mp4">
+                    </video>
+                    <figcation>Figure 11. Animations created for the Rock Titan. </figcation>
+                </figure>
+            </div>
+        </section>
+         <section id="quarrior-enviroDesign" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-full">Rendering</h2>
-                <p class="grid-col-1">One challenging portion of the project was rendering a walkthrough animation of the model using Rhino. Due to hardware limitations, attempting to render a full animation at once would crash the program due to a shortage in memory resulting in very inconsistent quality renders. Figure 7 is an example of one of these hardware glitches which differs from the expected render in Figure 8. To solve the hardware memory issue, I had to reduce the quality of the images, and render the animation in smaller segments.</p>
+                <figure class="grid-col-1">
+                    <img src="img/quarrior/quarrior-fig-12.png" alt="Layout of the level and ceiling from bird's eye view.">
+                    <figcaption>Figure 12. Layout of the map of the level and rough approximation for shape at the top of the cave.</figcaption>
+                </figure>
+                <p class="grid-col-2">Figure 12 shows the layout of the cave that I drafted and the team agreed upon. Initially, the plan was to exclusively use free assets from non-photorealistic asset packs created by FreeStylized to maintain a consistent look. Figure 13 shows the initial attempt to create the cave using primitive shapes in Unity and stylized rock textures for the walls, as well as an assortment of assets from the previously mentioned asset packs. This attempt was unsuccessful as the flat, rigid angles created by the primitive cubes did not blend well with the softer, more organic angles found in all the other assets. Figure 14 shows the cave I modelled after the previous attempt, in which I used noise to displace a rough base mesh to emulate the curves of the other assets. </p>
+                <figure class="grid-col-1">
+                    <img src="img/quarrior/quarrior-fig-13.png" alt="Cave made up of primitive blocks">
+                    <figcaption>Figure 13. Initial attempt at creating the cave using primitive shapes in Unity.</figcation>
+                </figure>
+                <figure class="grid-col-2">
+                    <img src="img/quarrior/quarrior-fig-14.png" alt="Modeled Cave imported into Unity, view from high-angle.">
+                    <figcaption>Figure 14. Final cave modeled in Blender and imported into Unity.</figcaption>
+                </figure>
+                <p class="grid-col-1">An aspect that I wanted to explore through the creation of this game was modifying and using Unity’s post-processing features. After all the environmental assets were placed appropriately on the map, I began adjusting the various overrides on a post-processing volume, including bloom, depth of field, vignetting, and tone mapping. The adjustments made a significant impact on the game’s atmosphere and enriched its experience, as can be seen in Figures 15 and 16. 
+
+                </p>
+                <figure class="grid-col-2 img-comp-fig-contol">
+                    <div class="img-comp-container">
+                        <div class="img-comp-img">
+                            <img src="img/quarrior/quarrior-fig-16.png" alt="Environment with Post-Processing effects"></div>
+                        <div class="img-comp-img img-comp-overlay">
+                            <img src="img/quarrior/quarrior-fig-15.png" alt="Environment without Post-Processing effects.">
+                        </div>
+                    </div>
+                    <script language="javascript">initComparisons()</script>
+                    
+                </figure>
+                <div class="grid-col-2">
+                    <figcaption>Figure 15. Cave Environment without post-processing effects.</figcaption>
+                    <figcaption>Figure 16. Cave Environment with post-processing events.</figcaption>
+                    <p class="note"><em>Note.</em> If comparison between 2 images cannot be seen (e.g., pink selector is NOT in the center of the image), please REFRESH the page.</p> 
+                </div>
+
             </div>
-        </section> -->
-        <!-- <section id="quarrior-reflection" class="project-section">
+        </section>
+         <section id="quarrior-soundDesign" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-full">Sound Design</h2>
+                <p class="grid-col-1">Another aspect I was involved in was the sound design of the game, wherein I was responsible for finding, creating, and altering sounds for character voices and explosions. Throughout most of the project’s production, my partner had implemented some placeholder sounds for the voices that are found in Nox Sound’s Voices - Essentials pack. An example from the pack can be seen in Figure 17, which was the placeholder attack sound for the rock titan. As it came from a standard voice pack, the sound was too “human” for the character. As such, I brought the placeholder sounds into Audacity to use them as a base from which I could manipulate them into their final incarnations. Through adjustments in pitch, layering, compression, and reverb, the final versions of the sound, such as the attack shown in Figure 18.</p>
+                <div class="grid-col-2">
+                    <figure>
+                        <audio controls>
+                            <source src="img/quarrior/quarrior-fig-17.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <figcaption>Figure 17. Placeholder voice of Rock Titan attack from <a href="https://assetstore.unity.com/packages/audio/sound-fx/voices/voices-essentials-214441">Nox Sound's Voices Essentials.</a></figcaption>
+                    </figure>
+                    <figure>
+                        <audio controls>
+                            <source src="img/quarrior/quarrior-fig-18.mp3" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <figcaption>Figure 18. Final sound of Rock Titan attack.</figcaption>
+                    </figure>
+
+                </div>
+                
+            </div>
+        </section>
+        <section id="quarrior-reflection" class="project-section">
             <div class="project-section-wrapper">
                 <h2 class="grid-col-1">Reflection</h2>
-                <p class="grid-col-1">Overall, I found that this project was successful. The project gave me confidence that I can take a concept to completion while maintaining its original intent and additionally finding new interest in node-based programs to experiment with in the future.</p>
+                <p class="grid-col-1">This was a gratifying personal project where I got to explore more aspects of the 3D asset pipeline that I hadn’t been able to in previous projects. Specifically, having the time to focus on texturing and become familiar and comfortable with Substance Painter was a really valuable experience that I’m sure I will use well in the future. In addition to texturing, modelling while paying attention to polygon counts was new to me, as I hadn’t done so in past projects. It is also an aspect that I do think I still need to delve deeper into in future projects, specifically the aspect of retopology, which I hadn’t needed to do with the way I approached the modelling process in this project. </p>
             </div>
-        </section> -->
+        </section>
+        <section id="quarrior-references" class="project-section">
+            <div class="project-section-wrapper">
+                <h2 class="grid-col-1">References</h2>
+                <ul class="grid-col-1 reference-ul">
+                    <li>Tkalych, D. (2024, January 3). Does Polygon Count Matter in 3D Modeling for Game Assets?. 3D-Ace Studio. <a href="https://3d-ace.com/blog/polygon-count-in-3d-modeling-for-game-assets/"></a>https://3d-ace.com/blog/polygon-count-in-3d-modeling-for-game-assets/</li>
+                </ul>
+                <h3 class="grid-col-1">Assets Used</h3>
+                <ul class="grid-col-1">
+                    <li>Free Stylized's Medieval Props Asset Pack: <a href="https://freestylized.com/asset_pack/medieval-props-01/"> https://freestylized.com/asset_pack/medieval-props-01/</a></li>
+                    <li>Free Stylized's Rock Asset Pack: <a href="https://freestylized.com/asset_pack/rocks-01/">https://freestylized.com/asset_pack/rocks-01/</a></li>
+                    <li>Nox Sound's Voices-Essentials Pack: <a href="https://assetstore.unity.com/packages/audio/sound-fx/voices/voices-essentials-214441">https://assetstore.unity.com/packages/audio/sound-fx/voices/voices-essentials-214441</a></li>
+                </ul>
+                
+            </div>
+        </section>
         
     </main>
     <footer>
