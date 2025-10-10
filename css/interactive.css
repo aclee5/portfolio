@@ -294,4 +294,7 @@
     text-decoration: none;
 }
 
-
+/* Image Gallery */
+.grid-item{
+    max-width: 18rem;
+}

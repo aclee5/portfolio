@@ -347,6 +347,13 @@ section .project-section-wrapper{
     
 }
 
+.image-gallery{
+    margin:auto;
+    max-width: var(--screenMaxWidth);
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+
+}
 
 
 /* Project Details */
